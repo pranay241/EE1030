@@ -1,0 +1,170 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+
+\title{ASSIGNMENT 1}
+\author{EE24BTECH11011- B PRANAY KUMAR}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+   Passage 1\\
+Let $a_n$ denote the number of all $n$ digit positive numbers formed by the digits $0,1$ or both such that no consecutive digits in them are $0$.Let $b_n$= number of such $n$ digit integers ending with digits $1$ and $c_n$= number of such $n$ digit integers ending with $0$.
+\hfill (2012)
+\begin{enumerate}
+    \item The value of $b_6$ is
+    \begin{enumerate}
+        \item $7$ 
+        \item $8$
+        \item $9$
+        \item $11$
+    \end{enumerate}
+    \item Which of the following is correct
+    \begin{enumerate}
+        \item $a_{17}=a_{16}+a_{15}$     
+        \item $c_{17}\neq c_{16}+c_{15}$
+        \item $b_{17} \neq b_{16}+c_{16}$
+        \item $a_{17}=c_{17}+b_{16}$  \\[30pt]
+    \end{enumerate}
+\end{enumerate}
+
+    
+
+
+\begin{enumerate}
+\section{Fill in the blanks}
+
+    
+\item Let $n_1<n_2<n_3<n_4<n_5$ be positive integers such that $n_1+n_2+n_3+n_4+n_5=20$.Then the number of such distinct arrangements ($n_1,n_2,n_3,n_4,n_5$) is \rule{1cm}{0.15mm}
+\hfill(2013) \\
+
+\item Let $n\ge2$ be an integer.Take $n$ distinct points on a circle and join each pair of points by a line segment.Colour the line segment joining every pair of adjacent points by blue and the rest by red.If the number of red and blue line segments are equal,then the value of $n$ is \rule{1cm}{0.15mm}
+\hfill(2014)\\
+
+\item Let $n$ be the number of ways in which $5$ boys and $5$ girls can stand in a queue in such a way that all the girls stand consecutively in the queue.Let $m$ be the number of ways in which $5$ boys and $5$ girls can stand in a queue in such a way that exactly four girls stand consecutively in the queue.Then the value of $\frac{m}{n}$ is \rule{1cm}{0.15mm}
+\hfill(2015)\\
+
+\item Words of length $10$ are formed using the letter $A,B,C,D,E,F,G,H,I,J$.Let $x$ be the number of such words where no letter is repeated; and let $y$ be the number of such words where exactly one letter is repeated twice and no other letter is repeated.Then, $\frac{y}{9x}$= \rule{1cm}{0.15mm} 
+\hfill(2017)\\
+
+\item The number of $5$ digit numbers which are divisible by $4$,with digits from the set $\brak{1,2,3,4,5}$ and the repetition of digits is allowed is \rule{1cm}{0.15mm}
+\hfill (2018)\\
+
+\item Let $\mid X \mid $ denote the number of elements in set $X$.Let $S=\brak{1,2,3,4,5,6}$ be a sample space,where each element is equally likely to occur.If $A$ and $B$ are independent events associated with $S$, then the number of ordered pairs $\brak{A,B}$ such that $1\leq|B|<|A|$,equals \rule{1cm}{0.15mm}
+\hfill (2019)\\
+
+\item Five persons $A,B,C,D and E$ Are seated in circular arrangement.If each of them is given a hat of one of three colours red,blue and green,then the number of ways of distributing the hats such that the persons seated in adjacent seats get different coloured hats is \rule{1cm}{0.15mm}
+\hfill(2019)\\
+
+\section{Jee Main}
+
+\item Total number of four digit odd numbers that can be formed using $0,1,2,3,5,7$(using repetition allowed) are 
+\hfill(2002)
+\begin{enumerate}
+
+    \item $216$
+    
+    \item $400$
+    \item $720$
+    \item $375$\\
+\end{enumerate}
+
+\item Number greater than $1000$ but less than $4000$ is  formed using the digits $0,1,2,3,4$(repetition allowed).Their number is
+\hfill(2002)\\
+\begin{enumerate}
+    \item $125$
+    \item $105$
+    \item $375$
+    \item $625$
+\end{enumerate}
+
+\item Five digit numbers divisible by $3$ is formed using $0,1,2,3,4$ and $5$ without repetition.Total number of such numbers are
+\hfill(2002)
+\begin{enumerate}
+    \item $312$
+    \item $3125$
+    \item $120$
+    \item $216$ \\
+\end{enumerate}
+\item The sum of integers from $1$ to $100$ that are divisible by $2$ or $5$ is
+\hfill \brak{2002}
+\begin{enumerate}
+    \item $30000$
+    \item $3050$
+    \item $3600$
+    \item $3250$ \\
+\end{enumerate}
+\item If $^nC_r$ denotes the number of combinations of $n$ things taken $r$ at a time, then the expression $^nC_{r+1} + ^nC_{r-1} = 2  ^nC_r$ equals
+\hfill(2003)
+\begin{enumerate}
+    \item$^{n+1}C_{r+1}$
+    \item$^{n+2}C_r$
+    \item$^{n+2}C_{r+1}$
+    \item$^nC_r$\\
+\end{enumerate}
+
+\item Consider the set of eight vectors
+\begin{align}
+V={a\hat{i}+b\hat{j}+c\hat{k}:a,b,c \in \brak{-1,1}}.
+\end{align}
+Three non-coplanar vectors can be chosen from $V$ in $2^p$ ways.Then $p$ is
+\hfill(2013)
+
+
+
+\end{enumerate}
+
+\end{document}
+
+
