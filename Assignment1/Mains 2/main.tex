@@ -1,0 +1,215 @@
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+
+% Import necessary packages
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol} % Add the multicol package
+
+% New theorem declarations
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+% Custom command definitions
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Document begins here
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+% Title of the document
+\title{ASSIGNMENT 1}
+\author{EE24BTECH11011 - PRANAY}
+\maketitle
+
+\bigskip
+
+% Custom figure and table numbering
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+    \item If the boolean expression $\brak{p \land q} \odot \brak{p \oplus q}$ is a tautology , then $\odot  \text{ and }  \oplus$ are respectively given by :
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $\land , \rightarrow$
+        \item $\rightarrow , \rightarrow$
+        \item $ \lor , \rightarrow$
+        \item $ \lor , \land$
+    \end{enumerate}
+    \end{multicols}
+    \item Let the tangent to the circle $x^2 + y^2 = 25$ at the point $\vec{R}\brak{3,4}$ meet $x-\text{axis}$ and $y-\text{axis}$ at points $\vec{P}$ and $\vec{Q}$ , respectively. If $r$ is the radius of the circle passing through the origin $\vec{O}$ and having the centre at the incentre of triangle $OPQ$, then $r^2$ is equal to :
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{625}{72}$\\
+        \item $\frac{585}{66}$
+        \item $\frac{125}{72}$\\
+        \item $\frac{529}{64}$
+    \end{enumerate}
+    \end{multicols}
+    \item Let a computer program generate only the digits $0$ and $1$ to form a string of numbers with probability of occurence of $0$ at even places be $\frac{1}{2}$ and probability of occurence of $0$ at the odd place be $\frac{1}{3}$ . Then the probability that $'10'$ is followed by $'01'$ is equal to :
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $\frac{1}{6}$\\
+            \item $\frac{1}{18}$
+            \item $\frac{1}{9}$\\
+            \item $\frac{1}{3}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item The number of solutions of the equation $x + 2\tan{x} = \frac{\pi}{2}$ in the interval $\sbrak{0 , 2\pi}$
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $5$
+            \item $2$\\
+            \item $4$
+            \item $3$
+        \end{enumerate}
+    \end{multicols}
+
+    \item If the equation of plane passing through the mirror image of point $\brak{2 , 3  , 1}$ with respect to the line $ \frac{x+1}{2} = \frac{y-3}{2} = \frac{z+2}{-1}$ and containing the line $\frac{x-2}{3} = \frac{1-y}{3} = \frac{z+1}{2}$ is $\alpha{x}+\beta{y}+\gamma{z} = 24$ then $\alpha + \beta + \gamma$ is equal to : 
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $21$
+            \item $19$\\
+            \item $18$
+            \item $20$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Consider the function $ f : \mathbf{R} \rightarrow \mathbf{R}$ defined by $ f\brak{x} = \begin{cases} \brak{2 - \sin{\brak{\frac{1}{x}}}}\abs{x} & \text{,} x \neq 0 \\ 0 & \text{,} x=0 \end{cases}$ . Then $f$ is
+        \begin{enumerate}
+            \item monotonic on $\brak{ 0 \text{,} \infty}$ only
+            \item Non monotonic on $\brak{-\infty , 0}$ and $\brak{0, \infty}$
+            \item monotonic on $\brak{-\infty , 0}$
+            \item monotonic on $\brak{-\infty , 0} \cup \brak{0 , \infty} $\\
+        \end{enumerate}
+   \item Let $\vec{O}$ be the origin . Let $\vec{OP} = x \hat{i} + y\hat{j} -\hat{k}$ and $\vec{OQ}= -\hat{i} + 2\hat{j} + 3x\hat{k} , x,y \in \mathbf{R} , x >0$ be such that $\abs{\vec{PQ}} = \sqrt{20}$ and the vector $\vec{OP}$ is perpendicular to $\vec{OQ}$. If $\vec{OR} = 3\hat{i} + z\hat{j} - 7\hat{k} , z \in \mathbf{R}$ , is coplanar with $\vec{OP}$ and $\vec{OQ}$ , then the value of $x^2 + y^2 + z^2$ is equal to :
+   \begin{multicols}{2}
+   \begin{enumerate}
+       \item $2$
+       \item $9$
+       \item $1$
+       \item $7$
+   \end{enumerate}
+   \end{multicols}
+
+   \item Let $\mathbf{L}$ be a tangent line to the parabola $y^2 = 4x -20$ at $\brak{6,2}$
+   If $\mathbf{L}$ is also a tangent to the ellipse $\frac{x^2}{2} + \frac{y^2}{b} = 1$ , then the value of $b$ is equal to :
+   \begin{multicols}{2}
+       \begin{enumerate}
+           \item $20$
+           \item $14$
+           \item $16$
+           \item $11$\\
+       \end{enumerate}
+   \end{multicols}
+   \item Let $f : \mathbf{R} \rightarrow \mathbf{R}$ be defined as $f\brak{x} = e^{-x} \sin{x}$. If $F : \sbrak{0 \text{,} 1} \rightarrow \mathbf{R}$ is a differentiable function such that $F\brak{x} = \int_0^{x} f\brak{t}dt$ , Then the value of $\int_0^1 \brak{F\brak{x}+f\brak{x}}e^x dx$ lies in the interval : 
+   \begin{multicols}{2}
+       \begin{enumerate}
+           \item $\sbrak{\frac{330}{360}, \frac{331}{360}}$\\
+           \item $\sbrak{\frac{331}{360} , \frac{334}{360}}$
+            \item $\sbrak{\frac{327}{360}, \frac{329}{360}}$\\
+             \item $\sbrak{\frac{335}{360}, \frac{336}{360}}$
+       \end{enumerate}
+   \end{multicols}
+   \item If $x , y, z$ are in arithmetic progression with the common difference $d , x \neq 3d$ and the determinent of the matrix $\myvec{ 3 & 4\sqrt{2} & x \\ 4 & 5\sqrt{2} & y \\ 5 &k &z}$ is zero , then the value of $k^2$ is : 
+   \begin{multicols}{2}
+       \begin{enumerate}
+           \item $6$
+           \item $36$\\
+           \item $72$
+           \item $12$
+       \end{enumerate}
+   \end{multicols}
+   \item If the integral $\int_0^{10} \frac{\sbrak{\sin{2\pi x}}}{e^{\abs{x}}} dx = \alpha{e^{-1}} + \beta{e^{\frac{-1}{2}}} + \gamma$ , where $\alpha  , \beta , \gamma$ are integers and $\sbrak{x}$ denotes the greatest integer less than or equal to $x$ , then the value of $\alpha + \beta + \gamma$ is equal to : 
+   \begin{multicols}{2}
+       \begin{enumerate}
+           \item $20$
+           \item $0$\\
+           \item $25$
+           \item $10$
+       \end{enumerate}
+   \end{multicols}
+   \item Let $y = y\brak{x}$ be the solution of the differential equation \\$\brak{\cos{3\sin{x} + \cos{x} + 3 }}dy = \brak{1 + y\sin{x}\brak{3\sin{x}+ \cos{x} +3}}dx$ , $0 \leq x \leq \frac{\pi}{2}, y\brak{0}=0$.
+   Then $y\brak{\frac{\pi}{3}}$ is equal to:
+   \begin{multicols}{2}
+       \begin{enumerate}
+           \item $3\log_e \brak{\frac{2\sqrt{3}+10}{11}}$\\
+           \item $2\log_e \brak{\frac{\sqrt{3}+7}{2}}$
+           \item $2\log_e \brak{\frac{3\sqrt{3}-8}{4}}$\\
+           \item $3\log_e \brak{\frac{2\sqrt{3}+9}{6}}$
+       \end{enumerate}
+   \end{multicols}
+   \item The value of the limit $\lim_{x \to 0} \frac{\tan{\brak{\pi \cos^2{\theta}}}}{\sin \brak{2 \pi \sin^2{\theta}}}$ is equal to :
+   \begin{multicols}{2}
+   \begin{enumerate}
+       \item $\frac{-1}{2}$\\
+       \item $\frac{-1}{4}$
+       \item $0$\\
+       \item $\frac{1}{4}$
+   \end{enumerate}
+   \end{multicols}
+   \item If the curve $y = y\brak{x}$ is the solution of the differential equation 
+          $ 2(x^2 + x^{\frac{5}{4}}) dy - y(x + x^{\frac{1}{4}}) dx = 2 x^{\frac{9}{4}}$, $x>0$ which passes through the point $\brak{1 ,1 - \frac{4}{3} \log_e 2}$ then the value of $y\brak{16}$ is equal to :
+          \begin{multicols}{2}
+              \begin{enumerate}
+                  \item $\brak{\frac{31}{3}- \frac{8}{3}\log_e 3}$\\
+                   \item $4\brak{\frac{31}{3}+\frac{8}{3}\log_e 3}$
+                    \item $\brak{\frac{31}{3}+ \frac{8}{3}\log_e 3}$\\
+                     \item 4$\brak{\frac{31}{3}- \frac{8}{3}\log_e 3}$
+              \end{enumerate}
+          \end{multicols}
+          \item Let $S_1 \text{,} S_2 \text{and} S_3$ be three sets defined as
+          
+\begin{gather*}
+	S_1 = \cbrak{z \in \mathbb C: \abs{z-1} \leq \sqrt{2} } \\
+	S_2 = \cbrak{z \in \mathbb C: \mathrm{Re}\brak{\brak{1-i}z} \geq 1 } \\
+	S_3 = \cbrak{z \in \mathbb C: \mathrm{Im}\brak{ z} \leq 1}
+\end{gather*}
+Then the set $S_1 \cap S_2 \cap S_3$
+
+\begin{enumerate}
+    \item Has infinitely many elements
+    \item Has exactly $2$ elements
+    \item has exactly $3$ elements 
+    \item is singleton
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
