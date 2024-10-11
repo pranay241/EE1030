@@ -1,0 +1,215 @@
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+
+% Import necessary packages
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol} % Add the multicol package
+
+% New theorem declarations
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+% Custom command definitions
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Document begins here
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+% Title of the document
+\title{6 APRIL 2023-1}
+\author{EE24BTECH11011 - PRANAY}
+\maketitle
+
+\bigskip
+
+% Custom figure and table numbering
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+    \item The straight lines $l_1$ and $l_2$ pass through the origin and trisect the line segment of the line $\mathbf{L} : 9x + 5y = 45$ between the axes. If $m_1$ and $m_2$ are slopes of the lines $l_1$ and $l_2$ then the point of intersection of line $y = \brak{m_1 + m_2} x$ with $\mathbf{L}$ lies on : 
+    \begin{multicols}{2}
+     \begin{enumerate}
+         \item $6x + y = 10$
+         \item $6x - y =15$\\
+         \item $y - 2x = 5$
+         \item $y - x =5$
+     \end{enumerate}
+    \end{multicols}
+    \item Let the position vectors of the points $\vec{A} ,\vec{B}, \vec{C}$ and $\vec{D}$ be $5\hat{i}+5\hat{j}+2\lambda \hat{k} , \hat{i}+2\hat{j}+3\hat{k}, -2\hat{i}+\lambda \hat{j}+ 4\hat{k}$ and $-\hat{i}+5\hat{j}+6\hat{k}$. Let the set $\mathbf{S} = \cbrak{ \lambda \in \mathbb{R} : \text{the points } \vec{A} , \vec{B}, \vec{C} \text{ and } \vec{D} \text{ are coplanar}}$ . Then $\sum_{\lambda \in \mathbf{S}}\brak{\lambda + 2}^2$ is equal to : 
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $\frac{37}{2}$\\
+            \item $13$
+            \item $25$\\
+            \item $41$
+        \end{enumerate}
+    \end{multicols}
+    \item Let 
+    \begin{align}
+        \mathbf{I}\brak{x} = \int{\frac{x^2 \brak{x \sec^2 x + \tan x}}{\brak{x \tan x +1}^2}dx}
+    \end{align}
+    If $\mathbf{I}\brak{0} = 0$, then $\mathbf{I}\brak{\frac{\pi}{4}}$ is equal to :
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $\log_e \frac{\brak{\pi +4}^2}{16} + \frac{\pi ^2}{4 \brak{\pi + 4}}$\\
+        \item $\log_e \frac{\brak{\pi +4}^2}{32} - \frac{\pi ^2}{4 \brak{\pi + 4}}$
+        \item $\log_e \frac{\brak{\pi +4}^2}{16} - \frac{\pi ^2}{4 \brak{\pi + 4}}$\\
+        \item $\log_e \frac{\brak{\pi +4}^2}{32} + \frac{\pi ^2}{4 \brak{\pi + 4}}$
+    \end{enumerate}
+    \end{multicols}
+    \item The sum of the first $20$ terms of the series $ 5 + 11 + 19 + 29 + 41 + \dots $ is
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $3450$
+        \item $3420$\\
+        \item $3520$
+        \item $3250$
+    \end{enumerate}
+    \end{multicols}
+    \item A pair of dice is thrown $5$ times. For each throw , a total of $5$ is considered a success.If probability of a least $4$ success is $\frac{k}{3^{11}}$ , the $k$ is equal to :
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $164$
+            \item $123$\\
+            \item $82$
+            \item $75$
+        \end{enumerate}
+    \end{multicols}
+    \item Let $\vec{A} = \myvec{a_{ij}}_{2 \times 2}$ , where $a_{ij} \neq 0$ for all $i , j$ and $\vec{A^2} = \vec{I}$. Let $a$ be the sum of all diagonal elements of $\vec{A}$ and $b = \mydet{A}$ Then $3a^2 + 4b^2$ is equal to :
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $14$
+        \item $4$\\
+        \item $3$
+        \item $7$
+    \end{enumerate}
+    \end{multicols}
+    \item Let $a_1 , a_2 , \dots , a_n$ be $n$ positive consecutive terms of an arithmetic progression. If $d > 0$ is its common difference then 
+    \begin{align}
+    \lim\limits_{a \rightarrow \infty} \sqrt{\frac{d}{n}}\brak{\frac{1}{\sqrt{a_1}+\sqrt{a_2}} + \frac{1}{\sqrt{a_2}+\sqrt{a_3}} \dots \frac{1}{\sqrt{a_{n-1}}+\sqrt{a_n}}}
+    \end{align}
+    is : 
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{1}{\sqrt{2}}$
+        \item $1$\\
+        \item $\sqrt{d}$
+        \item $0$
+    \end{enumerate}
+    \end{multicols}
+    \item If $\comb{2n}{3} \colon \comb{n}{3} \colon 10 \colon 1$, then the ratio $\brak{n^2 + 3n} : \brak{n^2 - 3n +4}$ is :
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $27 \colon 11$
+        \item $35 \colon 16$\\
+        \item $2 \colon 1$
+        \item $65 \colon 37$
+    \end{enumerate}
+    \end{multicols}
+    \item Let $A = \cbrak{ x \in \mathbb{R} \colon \sbrak{x+3} + \sbrak{x+4} \leq 3}$ , $ B = \cbrak{ x \in \mathbb{R} \colon 3^x \brak{\sum_{r=1}^\infty\frac{3}{10^r} }< 3 ^{-3x}}$ , where $\sbrak{t}$ denotes greatest integer function. Then ,
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $ A \subset B , A \neq B $
+        \item $ A \cap B = \emptyset$
+        \item $A = B$
+        \item $B \subset C , A \neq B$
+    \end{enumerate}
+    \end{multicols}
+    \item One vertex of a rectangular parallelopiped is at the origin $\vec{O}$ and the length of its edges along $ x , y \text{ and } z $ axes are $ 3 , 4 $ and $ 5 $ respectively.Let $\vec{P}$ be the vertex $\brak{ 3 , 4 , 5 }$ .Then the shortest distance between the diagonal $\vec{OP}$ and an edge parallel to $z$ axis , not passisng through $ \vec{O} \text{ or } \vec{P}$ is
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $\frac{12}{5\sqrt{5}}$\\
+            \item $12 \sqrt{5}$
+            \item $\frac{12}{5}$\\
+            \item $\frac{12}{\sqrt{5}}$
+        \end{enumerate}
+    \end{multicols}
+    \item If the equation of the plane passing through the line of intersection of planes $2x - y + z = 3 , 4x -3y +5z+9 =0$ and parallel to the line 
+    \begin{align}
+        \frac{x+1}{-2} = \frac{y+3}{4} = \frac{z-2}{5}
+    \end{align}
+    is $ax+ by + cz + 6 = 0 $ then $a + b + c$ is equal to
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $15$
+        \item $14$\\
+        \item $13$
+        \item $12$
+    \end{enumerate}
+    \end{multicols}
+    \item If the ratio of the fifth term from the beginning to the fifth term from the end in the expansion of $\brak{\sqrt[4]{x} + \frac{1}{\sqrt[4]{3}}}^n$ is $\sqrt{6} \colon 1$, then the third term from the beggining is 
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $30 \sqrt{2}$
+            \item $60 \sqrt{2}$\\
+            \item $30 \sqrt{3}$
+            \item $60 \sqrt{3}$
+        \end{enumerate}
+    \end{multicols}
+    \item The sum of all the roots of the equation $\abs{ x^2 - 8x + 15} - 2x +7 = 0$ is
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $11 - \sqrt{3}$
+            \item $9 - \sqrt{3}$
+            \item $9 + \sqrt{3}$
+            \item $11 + \sqrt{3}$
+        \end{enumerate}
+    \end{multicols}
+    \item From the top $A$ of a vertical wall $AB$ of height $30\text{m}$, the angles of depression of the top $P$ and bottom $Q$ of a vertical tower $PQ$ are $15\degree$ and $60\degree$ respectively , $B$ and $Q$ are on the same horizontal level . If $C$ is a point on $AB$ such that $ CB = PQ $ , then the area $\brak{\text{in } m^2}$ of the quadrilateral $BCPQ$ is equal to
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $200\brak{3-\sqrt{3}}$
+            \item $300\brak{\sqrt{3}+1}$\\
+            \item $300\brak{\sqrt{3}-1}$
+            \item $600\brak{\sqrt{3}-1}$
+        \end{enumerate}
+    \end{multicols}
+    \item Let $\vec{a} = 2\hat{i}+3\hat{j}+4\hat{k} , \vec{b} = \hat{i} - 2\hat{j} - 2\hat{k} \text{ and } \vec{c} = -\hat{i} + 4\hat{j} + 3\hat{k}$ . If $\vec{d}$ is a vector perpendicular to both $\vec{b}$ and $\vec{c}$ , and $\vec{a}\cdot \vec{d} = 18$ then $\sbrak{\vec{a}\times\vec{d}}^2$ is equal to
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $760$
+            \item $640$
+            \item $720$
+            \item $680$
+        \end{enumerate}
+    \end{multicols}
+\end{enumerate}
+\end{document}
