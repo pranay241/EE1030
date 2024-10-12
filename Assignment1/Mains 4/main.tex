@@ -1,0 +1,197 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{29 JAN 2024-2}
+\author{EE24BTECH11011-B.PRANAY KUMAR
+}
+ \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+\item Let $\vec{OA} = \vec{a} , \vec{OB} = 12\vec{a} + 4\vec{b} \text{ and } \vec{OC} = \vec{b}$ , where $\vec{O}$ is the origin.If $S$ is the parallelogram with adjacent sides $\vec{OA}$ and $\vec{OC}$ , then $\frac{\text{area of the quadrilateral }OABC}{\text{area of }S}$ is equal to 
+\begin{multicols}{2}
+\begin{enumerate}
+\item $8$
+\item $7$
+\item $6$
+\item $10$
+\end{enumerate}
+\end{multicols}
+\item Let a unit vector $\vec{u} = x\hat{i}+y\hat{j}+z\hat{k}$ makes angles $\frac{\pi}{2} \frac{\pi}{3} \text{ and } \frac{2\pi}{3}$ with the vectors $\frac{1}{\sqrt{2}}\hat{i}+\frac{1}{\sqrt{2}}\hat{k} , \frac{1}{\sqrt{2}}\hat{j}+\frac{1}{\sqrt{2}}\hat{k} \text{ and } \frac{1}{\sqrt{2}}\hat{i}+\frac{1}{\sqrt{2}}\hat{j}$ respectively.If $\vec{v} = \frac{1}{\sqrt{2}}\hat{i}+\frac{1}{\sqrt{2}}\hat{j}+\frac{1}{\sqrt{2}}\hat{k}$ then $\abs{\vec{u} - \vec{v}}^2 $ is equal to
+\begin{multicols}{2}
+\begin{enumerate}
+\item $9$\\
+\item $\frac{5}{2}$
+\item $7$\\
+\item $\frac{11}{2}$
+\end{enumerate}
+\end{multicols}
+\item The function $f\brak{x} = 2x + 3\brak{x}^{\frac{2}{3}} , x \in \mathbb{R} $ has
+	\begin{enumerate}
+		\item exactly one point of local minima and no point of local laxima
+		\item exactly one point of local maxima and exactly one point of local minima
+		\item exactly one point of local maxima and no point of local minima
+		\item exactly two points of local maxima and exactly one point of local minima\\
+	\end{enumerate}
+\item If each term of a geometric peogression $a_1 , a_2 , a_3 ,\dots $ with $a_1 = \frac{1}{8}$ and $a_2 \neq a_1 $ is the arithmetic mean of the next two terms and $S_n = a_1 + a_2 + \dots + a_n$ then $S_{20} - S_{18}$ is equal to
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $2^{18}$
+			\item $-2^{18}$
+			\item $2^{15}$
+			\item $-2^{15}$
+		\end{enumerate}
+	\end{multicols}
+\item If $\log_e a , \log_e b , log_e c $ are in A.P and $log_e{a} - \log_e{2b} , \log_e{2b} - \log_e{3c} , \log_e{3c} - \log_e{a}$ are also in an A.P then $a \colon b \colon c$ is equal to
+	\begin{enumerate}
+		\item $16 \colon 4 \colon 1$
+		\item $6 \colon 3 \colon 2$
+		\item $25 \colon 10 \colon 4$
+		\item $9 \colon 6 \colon 4$\\
+	\end{enumerate}
+\item Let $\vec{A} \brak{ 3 , 2 ,3} , \vec{Q}\brak{4 , 6 ,2} \text{ and } \vec{R}\brak{ 7 , 3 ,2}$ be the vertices of $\triangle {PQR}$.Then the angle $\angle{QPR}$ is
+	\begin{enumerate}
+		\item $\cos ^{-1}\brak{\frac{1}{18}}$
+		\item $\frac{\pi}{3}$
+		\item $\frac{\pi}{6}$
+		\item $\cos^{-1}\brak{\frac{7}{18}}$
+	\end{enumerate}
+\item Number of ways of arranging $8$ identical books into $4$ identical shelves where any number of shelves may remain empty is equal to 
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $16$
+			\item $18$
+			\item $15$
+			\item $12$
+		\end{enumerate}
+	\end{multicols}
+\item The distance of the point $\brak{ 2 , 3 }$ from the line $2x - 3y + 28 =0 $ measured parallel to the line $\sqrt{3}x - y + 1 = 0$ is equal to
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $ 4 + 6\sqrt{3}$
+			\item $ 3 + 4\sqrt{2}$
+			\item $6\sqrt{3}$
+			\item $4\sqrt{2}$
+		\end{enumerate}
+	\end{multicols}
+\item Let $ y = log_e \brak{\frac{1 - x^2}{1 + x^2}} , -1 < x < 1$ . Then at $x = \frac{1}{2}$, then the value off $225\brak{y^\prime - y^{\prime\prime}}$ is equal to 
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $736$
+			\item $746$
+			\item $732$
+			\item $742$
+		\end{enumerate}
+	\end{multicols}
+\item If 
+	\begin{align}
+		\int \frac{ \sin^{\frac{3}{2}}x + \cos^{\frac{3}{2}}x}{\sqrt{ \sin^3x \cos^3 x \sin \brak{x - \theta}}} dx = A \sqrt{\cos\theta \tan x - \sin \theta} + B \sqrt{ \cos \theta - \sin \theta \cot x} + C 
+	\end{align}
+	where $C$ is the integration constant, then $AB$ is equal to
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $4 \cosec\brak{2\theta}$
+			\item $4 \sec{\theta}$
+			\item $2 \sec{\theta}$
+			\item $8 \cosec\brak{2\theta}$
+		\end{enumerate}
+	\end{multicols}
+\item If $\mathbf{R}$ is the smallest equivalence relation on the set $\cbrak{ 1,2 ,3 ,4}$ such that $\cbrak{\brak{1,2},\brak{1,3}} \subset \mathbf{R}$, then the number of elements in $\mathbf{R}$ is 
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $12$
+			\item $15$\\
+			\item $8$
+			\item $10$
+		\end{enumerate}
+	\end{multicols}
+\item Let $x = \frac{m}{n} \brak{ m , n \text{ are co-prime natural numbers}}$ be a solution of the equation $\cos \brak{2\sin^{-1}x}=\frac{1}{9}$ and let $\alpha,\beta \brak{\alpha > \beta}$ be the roots of the equation $mx^2 - nx - m + n=0$.Then the point $\brak{\alpha,\beta}$ lies on the line 
+	\begin{enumerate}
+		\item $5x + 8y = 9$
+		\item $3x - 3y = -2$
+		\item $5x - 8y = -9$
+		\item $3x + 2y = 2$
+	\end{enumerate}
+\item The sum of the solutions $x \in \mathbb{R}$ of the equation 
+	\begin{align}
+		\frac{3\cos{2x}+\cos^3{2x}}{\cos^{6x}-\sin^3{6x}} = x^3 - x^2 + 6
+	\end{align}
+	is
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $-1$
+			\item $1$
+			\item $3$
+			\item $0$
+		\end{enumerate}
+	\end{multicols}
+\item Let $\vec{A} = \myvec{ 2 & 1 & 2 \\ 6 & 2 & 11 \\ 3 & 3 & 2} \text{ and } \vec{P} = \myvec{ 1 & 2 & 0 \\ 5 & 0 & 2 \\ 7 & 1 & 5} $. The sum of the prime factors of $\abs{\vec{P}^{-1}\vec{AP}-2\vec{I}}$ is equal to
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $26$
+			\item $66$
+			\item $23$
+			\item $27$
+		\end{enumerate}
+	\end{multicols}
+\item An integer is chosen at random from the integers $ 1 , 2 , 3 ,\dots , 50$. The probability that the chosen integer is a multiple of atleast one of $ 4 , 6 \text{ and } 7$ is 
+	\begin{enumerate}
+		\item $\frac{9}{50}$\\
+		\item $\frac{8}{25}$\\
+		\item $\frac{21}{50}$\\
+		\item $\frac{14}{25}$
+	\end{enumerate}
+\end{enumerate}
+ 
+\end{document}
+
