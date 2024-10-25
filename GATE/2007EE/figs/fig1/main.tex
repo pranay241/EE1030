@@ -1,0 +1,27 @@
+\documentclass{standalone}
+\usepackage{graphicx} % Include this for \resizebox
+\usepackage{circuitikz}
+\usepackage{tikz}
+
+\begin{document}
+\centering
+\resizebox{3cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (12.5,15.75) to[short, -o] (12.5,15.75);
+\draw (12.5,15.75) to[short, -o] (12.5,17.5);
+\draw (12.5,12.25) to[Tpnp] (12.5,14.25); % Remove scale if not recognized
+\draw (12.5,15.75) to[R] (12.5,14.25);
+\draw (12.5,12.25) to[R] (12.5,10.75);
+\draw (11.5,13.25) to[short] (10.5,13.25);
+\draw (10.5,13.25) to[R] (10.5,11.25);
+\draw (10.5,11.25) to (10.5,10.75) node[ground]{};
+\draw (12.5,11) to (12.5,10.5) node[ground]{};
+\node [font=\LARGE] at (12.5,18) {+10v};
+\node [font=\large] at (13.5,15) {1k$\Omega$};
+\node [font=\large] at (13.5,11.5) {1k$\Omega$};
+\node [font=\large] at (9.5,12.25) {270k$\Omega$};
+\end{circuitikz}
+}%
+\end{document}
+

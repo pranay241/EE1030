@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{amsmath} % For mathematical symbols
+\usepackage{caption} % For caption support
+
+\begin{document}
+
+
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (3.75,9) to[short] (17.25,9);
+\draw (10.25,9) to[short] (10.25,12.5);
+\foreach \x in {0,...,4}{
+  \draw  (7.75+\x*1,11.25) -- ++(0.5,0.9) -- ++ (0.5, -0.9);
+}
+\node [font=\normalsize] at (17.25,8.5) {$\omega$};
+\end{circuitikz}
+}%
+
+
+\end{document}
+

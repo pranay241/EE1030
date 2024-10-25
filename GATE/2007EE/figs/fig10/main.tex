@@ -1,0 +1,36 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{center}
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [line width=0.8pt, ->, >=Stealth] (-2,12.75) -- (0,12.75);
+\draw [line width=0.8pt] (0.75,12.75) circle (0.75cm);
+\draw [line width=0.8pt, ->, >=Stealth] (1.5,12.75) -- (3.75,12.75);
+\draw [line width=0.8pt] (3.75,13.5) rectangle (6.5,11.75);
+\draw [line width=0.8pt, short] (6.5,13) -- (9.5,13);
+\draw [line width=0.8pt, ->, >=Stealth] (9.5,13) -- (9.5,9.25);
+\draw [line width=0.8pt] (9.5,8.5) circle (0.75cm);
+\draw [line width=0.8pt, ->, >=Stealth] (12.25,8.5) -- (10.25,8.5);
+\draw [line width=0.8pt, ->, >=Stealth] (8.75,8.5) -- (5.5,8.5);
+\draw [line width=0.8pt] (2,9.75) rectangle (5.5,7.5);
+\draw [line width=0.8pt, short] (2,8.75) -- (0.5,8.75);
+\draw [line width=0.8pt, ->, >=Stealth] (0.5,8.75) -- (0.5,12);
+\node [font=\normalsize] at (-0.25,13.25) {+};
+\node [font=\normalsize] at (-0.75,14.25) {u\textsubscript{1}};
+\node [font=\normalsize] at (0.75,12.75) {$\sum$};
+\node [font=\normalsize] at (5,12.75) {$\frac{s-1}{s+2}$};
+\node [font=\normalsize] at (3.75,8.5) {$\frac{1}{s-1}$};
+\node [font=\normalsize] at (9.5,8.75) {$\sum$};
+\node [font=\normalsize] at (10.25,9.5) {+};
+\node [font=\normalsize] at (10.5,8) {+};
+\node [font=\normalsize] at (13,7.75) {u\textsubscript{2}};
+\end{circuitikz}
+}%
+\end{center}
+\end{document}
+

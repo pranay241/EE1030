@@ -1,0 +1,61 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{center}
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small] % Changed to \small for better fit
+\draw [line width=1.1pt](1.25,18.5) to[short] (1.25,4.75);
+\draw [line width=1.1pt](1.25,4.75) to[short] (12,4.75);
+\draw [line width=1.1pt](12,4.75) to[short] (13.75,4.75);
+\draw [line width=1.1pt](1.25,18.5) to[short] (8,18.5);
+\draw [line width=1.1pt](8,18.5) to[short] (13.75,18.5);
+\draw [line width=1.1pt](13.75,18.5) to[short] (13.75,4.75);
+\draw [line width=1.1pt](1.25,11) to[short] (13.5,11);
+\draw [line width=1.1pt](13.75,11) to[short] (13.25,11);
+\draw [line width=1.7pt, short] (1.25,11) .. controls (5.75,17.5) and (7.5,16) .. (13.75,16.5);
+\draw [line width=2pt, short] (1.25,6) .. controls (5,12) and (7.75,9.75) .. (13.75,11);
+\node [font=\small] at (8,15.5) {\textbf{CH\_1}}; % Changed \normalsize to \small
+\node [font=\small] at (7.75,9.5) {\textbf{CH\_2}}; % Changed \normalsize to \small
+\draw [line width=1.1pt, ->, >=Stealth] (14,11) -- (13.75,11);
+\draw [line width=1.1pt, ->, >=Stealth] (14.25,11) -- (13.75,11);
+\draw [line width=1.1pt, ->, >=Stealth] (14.25,11) -- (14,11);
+\node [font=\small] at (15,11) {$GND_{12}$}; % Changed \normalsize to \small
+\draw [line width=0.2pt, short] (2.5,18.5) -- (2.5,4.75);
+\draw [line width=0.2pt, short] (3.75,18.5) -- (3.75,9.5);
+\draw [line width=0.2pt, short] (3.75,9.5) -- (3.75,5);
+\draw [line width=0.2pt, short] (3.75,5) -- (3.75,4.75);
+\draw [line width=0.2pt, short] (5,18.5) -- (5,6.75);
+\draw [line width=0.2pt, short] (5,7) -- (5,4.75);
+\draw [line width=0.2pt, short] (6.25,18.5) -- (6.25,7);
+\draw [line width=0.2pt, short] (6.25,7) -- (6.25,4.75);
+\draw [line width=0.2pt, short] (7.5,18.5) -- (7.5,5.25);
+\draw [line width=0.2pt, short] (7.5,5.5) -- (7.5,4.75);
+\draw [line width=0.2pt, short] (8.75,18.5) -- (8.75,6);
+\draw [line width=0.2pt, short] (8.75,6) -- (10.75,6);
+\draw [line width=0.2pt, short] (8.75,6) -- (8.75,4.75);
+\draw [line width=0.2pt, short] (1.25,17.25) -- (13.75,17.25);
+\draw [line width=0.2pt, short] (10,18.5) -- (10,4.75);
+\draw [line width=0.2pt, short] (11.25,18.5) -- (11.25,8.25);
+\draw [line width=0.2pt, short] (11.25,8.25) -- (11.25,4.75);
+\draw [line width=0.2pt, short] (12.5,18.5) -- (12.5,5.5);
+\draw [line width=0.2pt, short] (12.5,5.75) -- (12.5,4.75);
+\draw [line width=0.2pt, short] (1.25,17.25) -- (13.75,17.25);
+\draw [line width=0.2pt, short] (1.25,16) -- (13.75,16);
+\draw [line width=0.2pt, short] (1.25,14.75) -- (13.75,14.75);
+\draw [line width=0.2pt, short] (1.25,13.5) -- (13.75,13.5);
+\draw [line width=0.2pt, short] (1.25,12.25) -- (13.75,12.25);
+\draw [line width=0.2pt, short] (1.25,9.75) -- (13.75,9.75);
+\draw [line width=0.2pt, short] (1.25,8.5) -- (13.75,8.5);
+\draw [line width=0.2pt, short] (1.25,7.25) -- (13.75,7.25);
+\draw [line width=0.2pt, short] (1.25,6) -- (13.75,6);
+\end{circuitikz}
+}%
+\end{center}
+
+\end{document}
+

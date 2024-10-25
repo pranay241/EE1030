@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{amsmath}
+\usepackage{caption} % For caption support
+
+\begin{document}
+
+% Directly place the circuit diagram without centering environment
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize] % Set font size for all nodes
+\draw (7.25,9.75) to[short] (16,9.75);
+\draw (11.5,9.75) to[short] (11.5,13.75);
+\draw (9,9.75) to[short] (11.5,12.25);
+\draw (11.5,12.25) to[short] (14,9.75);
+\node at (12.75,13.25) {$| U(j\omega) |$};  % Absolute value representation
+\node at (16,9.25) {$\omega$}; % Omega in math mode
+\node at (13.5,9.25) {1 kHz}; % Text node for frequency
+\end{circuitikz}
+}%
+
+
+\end{document}
+

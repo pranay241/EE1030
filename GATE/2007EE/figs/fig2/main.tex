@@ -1,0 +1,36 @@
+\documentclass{standalone}
+\usepackage{graphicx} % Required for \resizebox
+\usepackage{circuitikz}
+\usepackage{tikz}
+
+\begin{document}
+\centering
+\resizebox{3cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (12.5,15.75) to[short, -o] (12.5,15.75);
+\draw (6.5,15.75) to[Tnpn] (3.5,15.75); % Removed transistors/scale=1.19
+\draw (3.5,15.75) to[short, -o] (3.25,15.75);
+\node at (6.5,15.75) [circ] {};
+\draw (5,14.75) to[short] (5,14.25);
+\node at (5,14.25) [circ] {};
+\draw (5,14.25) to[R] (6.5,14.25);
+\draw (6.5,15.75) to[short] (6.5,14.25);
+\draw (6.5,15.75) to[short] (8.25,15.75);
+\draw (8.25,15.75) to[R] (8.25,13.25);
+\draw (5,13.25) to[short] (8.25,13.25);
+\node at (5,13.25) [circ] {};
+\draw (5,13.25) to[empty Zener diode] (5,14.25);
+\draw (5,13.25) to (5,12.75) node[ground]{};
+\draw (5,13.25) to[short, -o] (3.25,13.25);
+\node [font=\normalsize] at (4.5,13) {0};
+\node [font=\normalsize] at (3,14.5) {$V_{in}$};
+\node [font=\small] at (5.5,13.75) {6.6V};
+\node [font=\small] at (6,13.5) {zener diode};
+\node [font=\small] at (5.75,14.75) {1k$\Omega$};
+\node [font=\large] at (8.75,14.5) {R};
+\node [font=\normalsize] at (2.75,15.75) {+10V};
+\end{circuitikz}
+}%
+\end{document}
+

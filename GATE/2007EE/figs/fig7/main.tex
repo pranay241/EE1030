@@ -1,0 +1,52 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{tikz}
+
+\begin{document}
+
+\centering
+\resizebox{3cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+% Battery
+\draw (9.5,10.5) to[battery1] (9.5,9.75);
+\draw (9.5,10.5) to[short] (9.5,11.5);
+\draw (9.5,11.5) to[short] (10.75,11.5);
+
+% Resistor R1
+\draw (10.75,11.5) to[european resistor] (10.75,9.75);
+
+% Operational Amplifier
+\draw (12.75,9.25) node[op amp, scale=1, yscale=-1] (opamp2) {};
+\draw (opamp2.+) to[short] (11.25,9.75);
+\draw (opamp2.-) to[short] (11.25,8.75);
+
+% Short connections and resistors
+\draw (13.95,9.25) to[short](14.25,9.25);
+\draw (11.25,7.75) to[short] (14.25,7.75);
+\draw (14.25,9.25) to[european resistor] (14.25,7.75);
+\draw (14.25,7.75) to[european resistor] (14.25,6);
+\draw (10.75,7.75) to[short] (10.75,6);
+\draw (11.25,6) to[short] (14.25,6);
+\draw (11.25,8.75) to[short] (11.25,7.75);
+\draw (11,6) to[short] (11.5,6);
+\draw (11,9.75) to[short] (11.5,9.75);
+\draw (10.75,9.75) to[european resistor] (10.75,7.75);
+\draw (10.75,6) to[short] (12.75,6);
+\draw (9.5,9.75) to[short] (9.5,6);
+\draw (10.75,6) to[short] (9.5,6);
+
+% Labels
+\node [font=\small] at (9.25,10.5) {+};
+\node [font=\normalsize] at (9,9.75) {\textbf{V}};
+\node [font=\normalsize] at (10.25,10.75) {\textbf{R\textsubscript{1}}}; % Use \textsubscript for subscripts
+\node [font=\normalsize] at (10.25,8.75) {\textbf{R\textsubscript{2}}}; % Use \textsubscript for subscripts
+\node [font=\normalsize] at (15,8.75) {\textbf{LOAD}};
+\node [font=\normalsize] at (14.75,7) {\textbf{r}};
+
+\end{circuitikz}
+}%
+
+\end{document}
+

@@ -1,0 +1,32 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{amsmath} % For mathematical symbols
+\usepackage{caption} % For caption support
+
+\begin{document}
+
+
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (3.75,9) to[short] (17.25,9);
+\draw (10,9) to[short] (10,12.75);
+
+\draw (4.75,9.75) to[short] (5.5,9);
+\draw (8.5,9) to[short] (10,10.5);
+\draw (10,10.5) to[short] (11.5,9);
+\draw (5.5,9) to[short] (7,10.5);
+\draw (7,10.5) to[short] (8.5,9);
+\draw (11.5,9) to[short] (13,10.5);
+\draw (13,10.5) to[short] (14.5,9);
+\draw (14.5,9) to[short] (15.25,9.75);
+\node [font=\normalsize] at (10.75,12.5) {$| U(j\omega) |$};
+\node [font=\normalsize] at (17,8.5) {$\omega$};
+\end{circuitikz}
+}%
+
+
+
+\end{document}
+

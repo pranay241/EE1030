@@ -1,0 +1,35 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{tikz}
+
+\begin{document}
+
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+% Draw components
+\draw (3.5,11.75) circle (0.5cm); % Main circle
+\draw (3.5,12.25) to[short] (3.5,14); % Connection to the top
+\draw (3.5,14) to[short] (4.75,14); % Connection to resistor
+\draw (4.75,14) to[R] (6.75,14); % Resistor
+\draw (6.75,14) to[L] (6.75,10.5); % Inductor
+\draw (3.5,11.25) to[short] (3.5,10.5); % Connection to the bottom
+\draw (3.5,10.5) to[short] (6.75,10.5); % Bottom connection
+
+% Nodes
+\node at (4.75,14) [circ] {}; % Node A
+\node at (6.25,14) [circ] {}; % Node B
+\node at (6.75,10.5) [circ] {}; % Node C
+
+% Labels
+\node [font=\normalsize] at (2.5,11.25) {\textbf{V\textsubscript{in}}}; % Voltage input
+\node [font=\normalsize] at (4.5,14.5) {\textbf{A}}; % Node A label
+\node [font=\normalsize] at (6.25,14.5) {\textbf{B}}; % Node B label
+\node [font=\normalsize] at (7,10.25) {\textbf{C}}; % Node C label
+\end{circuitikz}
+}%
+
+\end{document}
+

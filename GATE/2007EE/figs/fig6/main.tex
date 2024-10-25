@@ -1,0 +1,26 @@
+
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{tikz}
+
+\begin{document}
+
+
+\centering
+\resizebox{3cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (11.25,14) circle (0.25cm);
+\draw  (9.5,10.5) circle (0.25cm);
+\draw  (12.75,10.5) circle (0.25cm);
+\node at (11.25,13.75) [circ] {};
+\node at (11.25,14.25) [circ] {};
+\node at (11.25,12) [circ] {};
+\node at (10.25,12.5) [circ] {};
+\node [font=\small] at (11.5,12) {\textbf{W}};
+\node [font=\small] at (11.25,13.5) {\textbf{X}};
+\node [font=\small] at (11.25,14.5) {\textbf{Y}};
+\node [font=\small] at (10,12.75) {\textbf{Z}};
+\end{circuitikz}
+}%
+\end{document}

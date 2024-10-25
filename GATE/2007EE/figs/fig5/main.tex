@@ -1,0 +1,42 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{amsmath} % For \text command
+
+\begin{document}
+\centering
+\resizebox{3cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+
+\draw  (6,13) ellipse (1.5cm and 2.5cm);
+\draw  (13.75,13) ellipse (1.5cm and 2.5cm);
+\draw (5.5,18.25) to[short] (7.5,18.25);
+\draw (6.75,11.75) to[short] (13,11.75);
+\draw (6.75,14) to[short] (8.25,14);
+\draw  (8.25,14.25) rectangle (9.25,13.5);
+\draw [short] (9.25,14) -- (10,14);
+\draw  (10,14.25) rectangle (11,13.5);
+\draw [short] (11,14) -- (12.75,14);
+
+\draw (8.75,13.5) to[D] (8.75,14);
+\draw [short] (8.75,14) -- (8.75,14.25);
+\draw [short] (8.75,14) -- (9,14.25);
+\draw (10.5,14.25) to[D] (10.5,13.75);
+\draw [short] (10.5,13.75) -- (10.5,13.5);
+\draw [short] (10.5,13.75) -- (10.75,13.5);
+\draw [->, >=Stealth] (8.25,15.5) -- (10.75,15.5);
+\draw [->, >=Stealth] (8.5,9.75) -- (11,9.75);
+
+% Adding labels
+\node [font=\normalsize] at (9.25,16) {$P_{dc}$};
+\node [font=\small] at (9.5,13) {\text{HVDC Link}};
+\node [font=\small] at (9.75,11.5) {\text{AC line}};
+\node [font=\small] at (9.25,9.25) {$P_{ac}$};
+\node [font=\small] at (5.75,13) {\textbf{Region 1}};
+\node [font=\small] at (13.5,13) {\textbf{Region 2}};
+
+\end{circuitikz}
+}%
+\end{document}
+
