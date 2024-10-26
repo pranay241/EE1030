@@ -1,0 +1,50 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+
+\begin{document}
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+
+% Vertical lines
+\draw [line width=0.5pt, short] (8.75,13.25) -- (8.75,9);
+\draw [line width=0.5pt, short] (9,13.25) -- (9,9);
+
+% Rectangular blocks
+\draw [fill={rgb,255:red,0; green,0; blue,0}, line width=0.5pt] (8.75,12.5) rectangle (9,9.25);
+\draw [fill={rgb,255:red,0; green,0; blue,0}, line width=0.5pt] (9,9.5) rectangle (11.5,9.25);
+
+% Additional vertical lines
+\draw [line width=0.5pt, short] (9.75,13.25) -- (9.75,11.75);
+\draw [line width=0.5pt, short] (10,13.25) -- (10,11.75);
+
+% Additional rectangular blocks
+\draw [fill={rgb,255:red,0; green,0; blue,0}, line width=0.5pt] (9.75,11.75) rectangle (10,10.5);
+\draw [fill={rgb,255:red,0; green,0; blue,0}, line width=0.5pt] (10,10.75) rectangle (11.25,10.5);
+\draw [fill={rgb,255:red,0; green,0; blue,0}, line width=0.5pt] (11.25,10.75) rectangle (11.5,10.5);
+
+% Arrows
+\draw [line width=0.5pt, ->, >=Stealth] (8,12.75) -- (8,12.5);
+\draw [line width=0.5pt, short] (7.75,12.5) -- (8.25,12.5);
+\draw [line width=0.5pt, ->, >=Stealth] (10.5,12) -- (10.5,11.75);
+\draw [line width=0.5pt, short] (10.25,11.75) -- (10.75,11.75);
+
+% Horizontal and slanted lines
+\draw [line width=0.7pt, short] (11,11.75) -- (12.75,11.75);
+\draw [line width=0.7pt, short] (12.75,11.75) -- (16.25,15.25);
+
+% Distance arrow
+\draw [line width=1pt, <->, >=Stealth] (12.25,11.75) -- (12.25,9.75);
+
+% Circles with labels P, Q, R
+\draw [line width=0.5pt] (11.60,10.60) circle (0.1cm) node[right] {P};
+\draw [line width=0.5pt] (11.60,10.00) circle (0.1cm) node[right] {Q};
+\draw [line width=0.5pt] (11.60,9.40) circle (0.1cm) node[right] {R};
+
+% Label for 2 m
+\node at (12.5,10.95) [right] {\large 2 m};
+
+\end{circuitikz}
+
+\end{document}
+

@@ -1,0 +1,89 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{amsmath}
+
+\begin{document}
+
+
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+
+% Original provided drawing code
+\draw [short] (6.5,14) -- (7.25,14);
+\draw [line width=1.6pt, <->, >=Stealth] (7,13.75) -- (7,11.5);
+\node at (6.5,12.75) {$\frac{h}{2}$}; % Label for h/2
+\draw [line width=0.2pt, short] (6.5,14) -- (7.5,14);
+\draw [line width=0.2pt, short] (6.5,11.25) -- (7.5,11.25);
+\draw [line width=1.7pt, <->, >=Stealth] (7,11) -- (7,9);
+\node at (6.5,10) {$\frac{h}{2}$}; % Label for h/2
+\draw [line width=0.2pt, short] (6.5,8.75) -- (7.5,8.75);
+\draw [short] (8.5,14.5) -- (8.5,13.25);
+\draw [line width=0.8pt] (8.75,14.25) to[short] (8.75,13.75);
+\draw [line width=0.8pt, short] (8.75,14.25) -- (9.25,14);
+\draw [line width=0.8pt, short] (8.75,13.75) -- (9.25,14);
+\draw [line width=0.8pt, short] (9.25,14) -- (9.75,14.25);
+\draw [line width=0.8pt, short] (10,14.25) -- (10,13.75);
+\draw [line width=0.8pt, short] (9.25,14) -- (9.75,13.75);
+\draw [line width=0.8pt, short] (10,14.5) -- (10,13.25);
+\draw [line width=0.8pt, short] (9.25,14) -- (9.25,12.25);
+\draw [line width=2pt, ->, >=Stealth] (9.25,12.25) -- (9.25,11.25);
+\node at (9.5,11.75) {$P$}; % Label for force P (swapped position with M)
+\draw [line width=2pt, ->, >=Stealth] (9,11) .. controls (9,11) and (9.25,11.75) .. (9.5,11);
+\node at (9.75,11.5) {$M$}; % Label for moment M (swapped position with P)
+\draw [line width=0.8pt, short] (9.25,11.25) -- (9.25,8);
+\draw [line width=0.8pt, short] (9.25,8) -- (8.75,7.5);
+\draw [line width=0.8pt, short] (9.25,8) -- (9.75,7.5);
+\draw [line width=0.8pt, short] (8.5,7.5) -- (10,7.5);
+\draw [line width=0.8pt, dashed] (8.5,14.5) -- (7.5,14.5);
+\draw [line width=0.8pt, dashed] (7.75,14.5) -- (7.5,14.25);
+\draw [line width=0.8pt, dashed] (8,14.5) -- (7.5,14);
+\draw [line width=0.8pt, dashed] (8.25,14.5) -- (7.5,13.75);
+\draw [line width=0.8pt, dashed] (8.5,14.5) -- (7.5,13.5);
+\draw [line width=0.8pt, dashed] (8.5,14) -- (7.75,13.25);
+\draw [line width=0.8pt, dashed] (8.5,14.25) -- (7.5,13.25);
+\draw [line width=0.8pt, dashed] (8.5,13.75) -- (8,13.25);
+\draw [line width=0.8pt, dashed] (8.5,13.5) -- (8.25,13.25);
+\draw [line width=0.8pt, dashed] (10,14.5) -- (11,14.5);
+\draw [line width=0.8pt, dashed] (10.25,14.5) -- (10,14.25);
+\draw [line width=0.8pt, dashed] (10.5,14.5) -- (10,14);
+\draw [line width=0.8pt, dashed] (10.75,14.5) -- (10,13.75);
+\draw [line width=0.8pt, dashed] (11,14.5) -- (10,13.5);
+\draw [line width=0.8pt, dashed] (11,14.25) -- (10,13.25);
+\draw [line width=0.8pt, dashed] (11,14) -- (10.25,13.25);
+\draw [line width=0.8pt, dashed] (11,13.75) -- (10.5,13.25);
+\draw [line width=0.8pt, dashed] (11,13.5) -- (10.75,13.25);
+\draw [line width=0.8pt, dashed] (7.5,13.25) -- (8.5,13.25);
+\draw [line width=0.8pt, dashed] (10,13.25) -- (11,13.25);
+\draw [fill={rgb,255:red,0; green,0; blue,0}, line width=1.2pt] (8.75,14) circle (0cm);
+\draw [fill={rgb,255:red,0; green,0; blue,0}, line width=1.2pt] (8.5,14.25) circle (0cm);
+\node at (8.5,14.25) [circ] {};
+\node at (8.5,13.75) [circ] {};
+\node at (10,14.25) [circ] {};
+\node at (10,13.75) [circ] {};
+\draw [line width=0.8pt, short] (9.75,14.25) -- (9.75,13.75);
+\draw [line width=0.8pt, dashed] (8.5,7.5) -- (8.5,6.75);
+\draw [line width=0.8pt, dashed] (8.5,6.75) -- (8.5,7);
+\draw [line width=0.8pt, dashed] (8.5,7) -- (8.5,6.5);
+\draw [line width=0.8pt, dashed] (8.5,6.5) -- (10,6.5);
+\draw [line width=0.8pt, dashed] (8.5,7.25) -- (8.75,7.5);
+\draw [line width=0.8pt, dashed] (8.5,7) -- (9,7.5);
+\draw [line width=0.8pt, dashed] (8.5,6.75) -- (9.25,7.5);
+\draw [line width=0.8pt, dashed] (8.5,6.5) -- (9.5,7.5);
+\draw [line width=0.8pt, dashed] (8.75,6.5) -- (9.75,7.5);
+\draw [line width=0.8pt, dashed] (9,6.5) -- (10,7.5);
+\draw [line width=0.8pt, dashed] (9.25,6.5) -- (10,7.25);
+\draw [line width=0.8pt, dashed] (9.5,6.5) -- (10,7);
+\draw [line width=0.8pt, dashed] (9.75,6.5) -- (10,6.75);
+
+% New label for R
+\node at (10.5,7.75) {$R$}; % Label for point R
+\node at (9,13) {$L$}; % Label for length L
+
+\end{circuitikz}
+}%
+
+
+\end{document}
+

@@ -1,0 +1,43 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [line width=0.5pt, short] (7,14.5) -- (11.5,14.5);
+\draw [line width=0.5pt, short] (7.75,14.5) -- (7.75,13.25);
+\draw [line width=0.5pt, short] (10.5,14.5) -- (10.5,13.25);
+\draw [line width=0.5pt, short] (7.75,13.25) -- (7.25,13.25);
+\draw [line width=0.5pt, short] (7.25,13.25) -- (7.25,8.5);
+\draw [line width=0.5pt, short] (10.5,13.25) -- (11,13.25);
+\draw [line width=0.5pt, short] (11,13.25) -- (11,8.5);
+\draw [line width=0.5pt, short] (6,8.5) -- (12,8.5);
+\draw [line width=0.5pt, short] (7.75,13.5) -- (7.75,9.75);
+\draw [line width=0.5pt, short] (7.75,9.5) -- (10.25,9.5);
+\draw [line width=0.5pt, short] (10.5,13.25) -- (10.5,9.75);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} , line width=0.5pt ] (7.5,13.25) rectangle (7.75,9.75);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} , line width=0.5pt ] (10.5,13.25) rectangle (10.75,9.75);
+\draw [line width=0.5pt, short] (7.75,9.75) -- (7.75,9.5);
+\draw [line width=0.5pt, short] (10.5,9.75) -- (10.5,9.5);
+\draw [line width=0.5pt, short] (10.25,9.5) -- (10.5,9.5);
+\draw [line width=1.4pt, ->, >=Stealth] (9,15.25) -- (9,15.75);
+\draw [line width=1.4pt, ->, >=Stealth] (9,7.25) -- (9,6.75);
+\draw [line width=1.4pt, <->, >=Stealth] (7.25,8) -- (11,8);
+\draw [line width=1.4pt, <->, >=Stealth] (7.75,14.75) -- (10.5,14.75);
+\draw [short] (9,14.5) .. controls (9,14) and (9.5,15) .. (9.5,14.5);
+\draw [short] (9,8.5) .. controls (9,8) and (9.5,9) .. (9.5,8.5);
+\draw [line width=0.7pt, ->, >=Stealth] (13,12.5) -- (10.75,10.75);
+\draw [line width=0.5pt, short] (13,12.5) -- (14.75,12.5);
+\draw [line width=0.5pt, short] (13.5,12.75) -- (13.5,12.25);
+\draw [line width=0.5pt, short] (13.5,12.75) -- (14,12.5);
+\draw [line width=0.5pt, short] (13.5,12.25) -- (14,12.5);
+\node [font=\large] at (9.5,16.25) {\textit{\textbf{P}}};
+\node [font=\large] at (9.5,6.25) {\textit{\textbf{P}}};
+\node [font=\large] at (9,15) {\textit{\textbf{100 mm}}};
+\node [font=\large] at (9,7.75) {\textit{\textbf{150 mm}}};
+\end{circuitikz}
+
+\end{document}
+
