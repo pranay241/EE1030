@@ -1,0 +1,32 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{circuitikz}
+
+\begin{document}
+
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (8.5,10.5) node[ieeestd not port, anchor=in, rotate=-270](port){} (port.out) to[short] (8.5,13);
+\draw (port.in) to[short] (8.5,9.5);
+\draw [line width=0.5pt] (8.5,13) to[short] (10,13);
+\node at (8.5,10) [circ] {};
+\draw [line width=0.5pt] (8.5,10) to[short] (10,10);
+\draw [line width=0.5pt] (10,13.5) to[short] (10,9.25);
+\draw [line width=0.5pt] (10,9.25) to[short] (11.25,10.5);
+\draw [line width=0.5pt] (10,13.5) to[short] (11.25,12.25);
+\draw [line width=0.5pt] (11.25,12.25) to[short] (11.25,10.5);
+\draw [line width=0.5pt] (11,10.25) to[short] (11,8.5);
+\draw [line width=0.5pt] (11.25,12) to[short] (12.75,12);
+\node [font=\large] at (10.25,12.75) {0};
+\node [font=\large] at (10.25,10) {1};
+\node [font=\large] at (11,12) {Y};
+\node [font=\large] at (11,10.5) {S};
+\node [font=\large] at (12.75,12.5) {F};
+\node [font=\large] at (11.5,8.5) {B};
+\node [font=\large] at (8.75,9.25) {A};
+\end{circuitikz}
+}%
+
+\end{document}
+

@@ -1,0 +1,35 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{circuitikz}
+
+\begin{document}
+
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [line width=0.5pt] (12.25,10.75) to[Tnpn, transistors/scale=1.19] (12.25,13.25);
+\draw [line width=0.5pt] (12.25,13.25) to[R] (12.25,15.25);
+\draw [line width=0.5pt, ->, >=Stealth] (12.25,15.25) -- (12.25,16.5);
+\node at (12.25,15.25) [circ] {};
+\draw [line width=0.5pt] (12.25,15.25) to[short] (10.25,15.25);
+\draw [line width=0.5pt] (10.25,15.25) to[R] (10.25,12);
+\node at (10.25,12) [circ] {};
+\draw [line width=0.5pt] (10.25,12) to[short] (11.25,12);
+\draw [line width=0.5pt] (10.25,10.5) to[empty Schottky diode] (10.25,12);
+\draw [line width=0.5pt] (10.25,10.5) to[short] (10.25,9.25);
+\node at (10.25,9.25) [circ] {};
+\draw [line width=0.5pt] (12.25,10.75) to[R] (12.25,9.25);
+\draw [line width=0.5pt] (10.25,9.25) to[short] (12.25,9.25);
+\draw [line width=0.5pt] (12.25,9.25) to (12.25,9) node[ground]{};
+\node [font=\large] at (9.25,13.75) {4.7k$\Omega$};
+\node [font=\large] at (13.25,14.25) {220 $\Omega$};
+\node [font=\large] at (12.75,17) {10V};
+\node [font=\large] at (13,10) {470 $\Omega$};
+\node [font=\large] at (9.5,10.5) {5.3V};
+\node [font=\large] at (9,12) {0.5mA};
+\draw [line width=0.5pt, ->, >=Stealth] (9.75,12) -- (9.75,11.25);
+\end{circuitikz}
+}%
+
+\end{document}
+

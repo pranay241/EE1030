@@ -1,0 +1,56 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{circuitikz}
+
+\begin{document}
+
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\node at (6,14.75) [circ] {};
+\draw [line width=0.5pt] (6,14.75) to[R] (8,14.75);
+\draw [line width=0.5pt] (8,14.75) to[R] (8,13);
+\draw [line width=0.5pt] (8,14.75) to[R] (10,14.75);
+\draw [line width=0.5pt] (10,14.75) to[R] (10,13);
+\draw [line width=0.5pt] (10,14.75) to[R] (11.75,14.75);
+\draw [line width=0.5pt] (11.75,14.75) to[R] (11.75,13);
+\node at (6,13) [circ] {};
+\draw [line width=0.5pt] (6,13) to[short] (11.75,13);
+\draw [line width=0.5pt, dashed] (11.75,14.75) -- (13.25,14.75);
+\draw [line width=0.5pt, dashed] (11.75,13) -- (13.25,13);
+\draw [line width=0.5pt, ->, >=Stealth, dashed] (12.75,14) -- (14.5,14);
+\draw [line width=0.5pt, ->, >=Stealth] (4.25,13.75) -- (5.75,13.75);
+\node [font=\large] at (4.5,14.25) {$R_A$};
+\node [font=\large] at (7,15.25) {2$\Omega$};
+\node [font=\large] at (9,15.25) {2$\Omega$};
+\node [font=\large] at (11,15.25) {2$\Omega$};
+\node [font=\large] at (7.5,14) {1$\Omega$};
+\node [font=\large] at (9.5,14) {1$\Omega$};
+\node [font=\large] at (11.25,14) {1$\Omega$};
+\node at (6,10.75) [circ] {};
+\draw [line width=0.5pt] (6,10.75) to[R] (8.25,10.75);
+\draw [line width=0.5pt] (8,10.75) to[R] (8,9);
+\draw [line width=0.5pt] (6.25,10.75) to[R] (6.25,9);
+\draw [line width=0.5pt] (8.25,10.75) to[R] (9.75,10.75);
+\draw [line width=0.5pt] (9.75,10.75) to[R] (9.75,9);
+\draw [line width=0.5pt] (9.75,10.75) to[R] (11.25,10.75);
+\draw [line width=0.5pt] (11.25,10.75) to[R] (11.25,9);
+\draw [line width=0.5pt, dashed] (11.25,10.75) -- (13,10.75);
+\draw [line width=0.5pt, dashed] (11.25,9) -- (13,9);
+\draw [line width=0.5pt, ->, >=Stealth, dashed] (12,10) -- (13.5,10);
+\node at (6,9) [circ] {};
+\draw [line width=0.5pt] (6,9) to[short] (11.25,9);
+\draw [line width=0.5pt, ->, >=Stealth] (4.5,9.75) -- (5.75,9.75);
+\node [font=\large] at (4.25,10) {$R_B$};
+\node [font=\large] at (7,11.25) {2$\Omega$};
+\node [font=\large] at (9,11.25) {2$\Omega$};
+\node [font=\large] at (10.5,11.25) {2$\Omega$};
+\node [font=\large] at (5.5,10.25) {1$\Omega$};
+\node [font=\large] at (7.5,10) {1$\Omega$};
+\node [font=\large] at (9,9.75) {1$\Omega$};
+\node [font=\large] at (10.75,10) {1$\Omega$};
+\end{circuitikz}
+}%
+
+\end{document}
+
