@@ -1,0 +1,193 @@
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+
+% Import necessary packages
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color} 
+\usepackage{enumitem} % Include this package
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol} % Add the multicol package
+\usepackage{circuitikz}
+\usepackage{textcomp}
+% New theorem declarations
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+% Custom command definitions
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Document begins here
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+% Title of the document
+\title{ASSIGNMENT 7}
+\author{EE24BTECH11011 - PRANAY}
+\maketitle
+
+\bigskip
+
+% Custom figure and table numbering
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\subsection{\textbf{Q.1 to Q.5 carry one mark each}}
+   \begin{enumerate}
+  \item  "The dress \rule{3cm}{0.15mm} her so well that they all immediately \rule{3cm}{0.15mm} her on her
+appearance."
+The words that best fill the blanks in the above sentence are
+\begin{enumerate}
+    \item complemented, complemented
+    \item complimented, complemented
+    \item  complimented, complimented
+    \item complemented, complimented
+\end{enumerate}
+\item "The judge's standing in the legal community, though shaken by false allegations of
+wrongdoing, remained \rule{3cm}{0.15mm}."\\
+The word that best fills the blank in the above sentence is
+\begin{multicols}{4}
+\begin{enumerate}
+    \item  undiminished \item  damaged \item  illegal \item  uncertain
+\end{enumerate}
+\end{multicols}
+\item Find the missing group of letters in the following series :\\
+BC, FGH, LMNO, \rule{3cm}{0.15mm}
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item  UVWXY \item  TUVWX \item  STUVW \item  RSTUV
+    \end{enumerate}
+\end{multicols}
+\item The perimeters of a circle, a square and an equilateral triangle are equal. Which one of the
+following statements is true?
+\begin{enumerate}
+    \item The circle has the largest area.
+\item  The square has the largest area.
+\item  The equilateral triangle has the largest area.
+\item  All the three shapes have the same area.
+\end{enumerate}
+\item The value of the expression $\frac{1}{1+\log_u{vw}}+\frac{1}{1+\log_v{uw}}+\frac{1}{1+\log_w{uv}}$ is \rule{3cm}{0.15mm}
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $-1$
+        \item $0$
+        \item $1$
+        \item $3$
+    \end{enumerate}
+\end{multicols}
+\subsection{\textbf{Q. 6 - Q. 10 carry two marks each.}}
+\item Forty students watched films $A$, $B$ and $C$ over a week. Each student watched either only
+one film or all three. Thirteen students watched film $A$, sixteen students watched film $B$
+and nineteen students watched film $C$. How many students watched all three films?
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $0$ \item $2$ \item $4$ \item $8$
+    \end{enumerate}
+\end{multicols}
+\item A wire would enclose an area of $1936 m^2$, if it is bent into a square. The wire is cut into
+two pieces. The longer piece is thrice as long as the shorter piece. The long and the short
+pieces are bent into a square and a circle, respectively. Which of the following choices is
+closest to the sum of the areas enclosed by the two pieces in square meters?
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item  $1096$ \item  $1111$ \item  $1243$ \item  $2486$
+    \end{enumerate}
+\end{multicols}
+\item A contract is to be completed in $52$ days and $125$ identical robots were employed, each
+operational for $7$ hours a day. After $39$ days, five-seventh of the work was completed. How
+many additional robots would be required to complete the work on time, if each robot is
+now operational for $8$ hours a day?
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $50$
+        \item $89$
+        \item $146$
+        \item $175$
+    \end{enumerate}
+\end{multicols}
+\item A house has a number which needs to be identified. The following three statements are
+given that can help in identifying the house number.
+\begin{enumerate}[label=\roman*.]
+\item If the house number is a multiple of 3, then it is a number from 50 to 59.
+\item  If the house number is NOT a multiple of 4, then it is a number from 60 to 69.
+\item  If the house number is NOT a multiple of 6, then it is a number from 70 to 79.
+\end{enumerate}
+What is the house number?
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $54$ \item $65$ \item $66$ \item $76$
+    \end{enumerate}
+\end{multicols}
+\item An unbiased coin is tossed six times in a row and four different such trials are conducted.
+One trial implies six tosses of the coin. If H stands for head and T stands for tail, the
+following are the observations from the four trials:
+$\brak{1}$ HTHTHT $\brak{2}$TTHHHT $\brak{3}$ HTTHHT $\brak{4}$ HHHT\rule{0.5cm}{0.14mm} \rule{0.5cm}{0.14mm}\\
+Which statement describing the last two coin tosses of the fourth trial has the highest
+probability of being correct?
+\begin{enumerate}
+\item  Two T will occur.
+\item  One H and one T will occur.
+\item  Two H will occur.
+\item  One H will be followed by one T.
+\end{enumerate}
+\end{enumerate}
+\subsection{\textbf{Q. 1 - Q. 25 carry one mark each}}
+\begin{enumerate}
+    \item Let $\vec{a} , \vec{b}$ be two distinct vectors that are not parallel. The vector $\vec{c} = \vec{a} \times \vec{b}$ is 
+    \begin{enumerate}
+        \item zero
+        \item orthogonal to $\vec{a}$ alone.
+        \item orthogonal to $\vec{a}+\vec{b}$
+        \item orthogonal to $\vec{b}$ alone.
+    \end{enumerate}
+    \item Consider the function $f\brak{x,y} = \frac{x^2}{2}+\frac{y^2}{3} -5$. All the roots of this function
+    \begin{enumerate}
+\item  form a finite set of points.
+\item  lie on an elliptical curve.
+\item  lie on the surface of a sphere.
+\item  lie on a hyperbolic curve
+\end{enumerate}
+\item Consider a vector field given by $x\hat{i}+y\hat{j}+z\hat{k}$ . This vector field is
+\begin{enumerate}
+\item  divergence-free and curl-free.
+\item  curl-free but not divergence-free.
+\item  divergence-free but not curl-free.
+\item  neither divergence-free nor curl-free.
+\end{enumerate}
+\end{enumerate}
+
+      
+       \end{document}
