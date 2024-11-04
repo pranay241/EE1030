@@ -1,0 +1,161 @@
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+
+% Import necessary packages
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color} 
+\usepackage{enumitem} % Include this package
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol} % Add the multicol package
+\usepackage{circuitikz}
+\usepackage{textcomp}
+% New theorem declarations
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+% Custom command definitions
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Document begins here
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+% Title of the document
+\title{ASSIGNMENT 8}
+\author{EE24BTECH11011 - PRANAY}
+\maketitle
+
+\bigskip
+
+% Custom figure and table numbering
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}\setcounter{enumi}{26}
+\item The probability density function of the random vector $\brak{X,Y}$ is given by
+\begin{align}
+	f_{X,Y}\brak{x,y} = \begin{cases*} c, 0<x<y<1 \\ 0, \text{otherwise} \end{cases*}
+\end{align}
+Then the value of $c$ is equal to $\dots$
+\item Let $\cbrak{X_n}_{n \geq 1}$ be a sequence of independent and identically distributed normal random variables with mean $4$ and variance $1$ . Then $\lim\limits_{n \rightarrow \infty} P\brak{\frac{1}{n}\sum_{i=1}^n X_i > 4.006}$ is equal to $\dots$
+\item Let $\brak{X_1,X_2}$ be a random vector following bivariate normal distribution with mean vector $\brak{0,0}$,Variance $\brak{X_1}$ = Variance $\brak{X_2} = 1$ and corelation coeffecient $\rho$ , where $\abs{\rho} <1$.Then $P\brak{X_1 + X_2 > 0}$ is equal to $\dots$
+\item Let $X_1 , \dots , X_n$ be a random sample from normal distribution with mean $\mu$ and variance $1$. Let $\phi$ be thw cumulative distribution function of the standard normal distribution.Given  $\phi\brak{1.96} = 0.975$,the minimum sample size required such that the length of the $95\%$ confidence interval for $\mu$ does NOT exceed 2 is $\dots$
+\item Let $X$ be a random variable with probability density function $f\brak{x;\theta} = \theta e^{-\theta x}$, where $x \geq 0$ and $\theta>0$. To test $H_o \colon \theta = 1$ against $H_1 \colon \theta > 1$,the following test is used :
+	\begin{align}
+		\text{Reject } H_o \text{ if and only if } X>log_e 20
+\end{align}
+Then the size of the test is $\dots$
+\item Let $\cbrak{X_n}_{n\geq 0}$ be a discrete time Markov chain on the square space $\cbrak{1,2,3}$ with one-step transisition probability matrix
+   \begin{align}
+\begin{array}{c c}
+    & \begin{array}{ccc}
+        1 & 2 & 3 \\
+    \end{array} \\ 
+    \begin{array}{c}
+        1 \\ 
+        2 \\ 
+        3 \\ 
+    \end{array} & 
+    \myvec{
+        0.4 & 0.3 & 0.3 \\ 
+        0.5 & 0.2 & 0.3 \\ 
+        0.2 & 0.4 & 0.4 \\ 
+    }
+\end{array}
+\end{align}
+and initial distribution $P\brak{X_0 = 1} = 0.5$, $P\brak{X_0 = 2} = 0.2$, $P\brak{X_0 = 3} = 0.3$. Then $P\brak{X_1 = 2, X_2 = 3, X_3 = 1}$ (rounded off to three decimal places) is equal to $\dots$
+\item Let $f$ be a continuous and positive real-valued function on $\sbrak{0, 1}$. Then
+\begin{align}
+\int^1_0 f\brak{\sin x} \cos x \, dx
+\end{align}
+is equal to ...
+\item A random sample of size $100$ is classified into $10$ class intervals covering all the data points. To test whether the data comes from a normal population with unknown mean and unknown variance, the chi-squared goodness of fit test is used. The degrees of freedom of the test statistic is equal to $\dots$
+\item For $i = 1, 2, 3, 4$, let $Y_i = \alpha + \beta x_i + \varepsilon_i$ where $x_i$'s are fixed covariates and $\varepsilon_i$'s are uncorrelated random variables with mean 0 and variance 3. Here, $\alpha$ and $\beta$ are unknown parameters. Given the following observations,
+\begin{table}[h!]    
+  \centering
+  \input{table/table.tex}
+\end{table}
+the variance of the least squares estimator of $\beta$ is equal to $\dots$
+\item Let $a_n = \frac{\brak{-1}^{n+1}}{n!} , n \geq 0$ and $b_n = \sum_{k=0}^n a_k , n \geq 0$. Then,for $\abs{x}<1$, the series $\sum_{n=0}^{\infty} b_n x^n$ converges to
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $\frac{-e^{-x}}{1+x}$
+      \item $\frac{-e^{-x}}{1+x^2}$
+        \item $\frac{-e^{-x}}{1-x}$
+         \item $-\brak{1+x}e^{-x}$
+\end{enumerate}
+\end{multicols}
+\item Let $\cbrak{X_k}_{k\geq 1}$ be a sequence of independent and indentically distributes Bernoulli random variables with success probability $p \in \brak{0,1}$.Then as $n \rightarrow \infty$
+\begin{align}
+    \frac{1}{n} \sum_{k=1}^n \brak{X_k}^k
+\end{align}
+converges almost surely to
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $p$
+    \item $\frac{1}{1-p}$
+    \item $\frac{1-p}{p}$
+    \item $1$
+\end{enumerate}
+\end{multicols}
+\item Let $X$ and $Y$ be two independent random variables with $\chi^2_m$ and $\chi^2_n$ distributions, respectively, where $m$ and $n$ are positive integers. Then which of the following statements is true?
+
+\begin{enumerate}
+    \item For $m < n, P\brak{X > a} \geq P\brak{Y > a}$ for all $a \in \mathbb{R}$.
+    \item For $m > n, P\brak{X > a} \geq P\brak{Y > a}$ for all $a \in \mathbb{R}$.
+    \item For $m < n, P\brak{X > a} = P\brak{Y > a}$ for all $a \in \mathbb{R}$.
+    \item None of the above.
+\end{enumerate}
+\item The matrix
+\begin{align}
+\myvec{
+1 & x & z \\
+0 & 2 & y \\
+0 & 0 & 1}
+\end{align}
+is diagonalizable when $\brak{x, y, z}$ equals
+
+\begin{enumerate}
+    \item $\brak{0, 0, 1}$
+    \item $\brak{1, 1, 0}$
+    \item $\brak{\sqrt{2}, \sqrt{2}, 2}$
+    \item $\brak{\sqrt{2}, \sqrt{2}, \sqrt{2}}$
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
