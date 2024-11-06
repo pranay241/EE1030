@@ -1,0 +1,34 @@
+\frametitle{Python Code for Plotting}
+    This Python code reads the data files and plots the functions and intersection:
+    \begin{lstlisting}[language=Python]
+    import numpy as np
+    from scipy.optimize import fsolve
+    import matplotlib.pyplot as plt
+
+    def equations(vars):
+        x, y = vars
+        return [(3 / x) + (8 / y) + 1, (1 / x) - (2 / y) - 2]
+
+    guesses = [(1, 1), (-1, -1)]
+    intersection_points = [fsolve(equations, guess) for guess in guesses]
+
+    def read_points(filename):
+        x_points, y_points = [], []
+        with open(filename, 'r') as file:
+            for line in file:
+                x, y = map(float, line.split())
+                x_points.append(x)
+                y_points.append(y)
+        return x_points, y_points
+
+    x1, y1 = read_points('plot1.txt')
+    x2, y2 = read_points('plot2.txt')
+
+    plt.plot(x1, y1, label=r"$\frac{3}{x} + \frac{8}{y} = -1$")
+    plt.plot(x2, y2, label=r"$\frac{1}{x} - \frac{2}{y} = 2$")
+    for (x_int, y_int) in intersection_points:
+        plt.plot(x_int, y_int, 'o', color='black')
+    plt.axis([-10, 10, -10, 10])
+    plt.legend()
+    plt.show()
+    \end{lstlisting}
