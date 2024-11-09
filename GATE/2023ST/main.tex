@@ -1,0 +1,217 @@
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+
+% Import necessary packages
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color} 
+\usepackage{enumitem} % Include this package
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol} % Add the multicol package
+\usepackage{circuitikz}
+\usepackage{textcomp}
+% New theorem declarations
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+% Custom command definitions
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Document begins here
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+% Title of the document
+\title{ASSIGNMENT 9}
+\author{EE24BTECH11011 - PRANAY}
+\maketitle
+
+\bigskip
+
+% Custom figure and table numbering
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}\setcounter{enumi}{39}
+\item Let $X_1,X_2,\dots,X_{10}$ be a random sample size $10$ from a population having $N\brak{0,\theta^2}$ distribution where $\theta > 0$ is and unknowm parameter.Let $T = \frac{1}{10}\sum_{i=1}^{10} {X_i}^2$. If the mean square error of $cT\brak{c>0}$, as an estimator of $\theta^2$, is minimized at $c = c_0$, then the value of $c_0$ equals
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $\frac{5}{6}$
+    \item $\frac{2}{3}$
+    \item $\frac{3}{5}$
+    \item $\frac{1}{2}$
+\end{enumerate}
+\end{multicols}
+\item Suppose that $X_1,X_2,\dots,X_{10}$ are independent and identically istributed random
+vectors each having $N_2\brak{\mu , \sum}$ distribution, where $\sum$ is non-singular. If
+\begin{align}
+    U = \frac{1}{1+\brak{\overline{X}-\mu}^\top \sum^{-1}\brak{\overline{X}-\mu}}
+\end{align}
+where $\overline{X} = \frac{1}{10}\sum_{i=1}^{10}X_i$ then the value of $\log_e P\brak{U \leq \frac{1}{2}}$ equals
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $-5$
+        \item $-10$
+        \item $-2$
+        \item $-1$
+    \end{enumerate}
+\end{multicols}
+\item Suppose that $\brak{X, Y}$ has joint probability mass function
+    \begin{align}
+    P\brak{X=0, Y=0} = P\brak{X=1, Y=1} = \theta,
+    \end{align}
+    \begin{align}
+    P\brak{X=1, Y=0} = P\brak{X=0, Y=1} = \frac{1}{2} - \theta,
+\end{align}
+    where $0 \leq \theta \leq \frac{1}{2}$ is an unknown parameter. Consider testing $H_0: \theta = \frac{1}{4}$
+    against $H_1: \theta = \frac{1}{3}$ based on a random sample $\{\brak{X_1, Y_1}, \brak{X_2, Y_2}, \dots , \brak{X_n, Y_n}\}$
+    from the above probability mass function. Let $M$ be the cardinality of the set
+    $\cbrak{i: X_i = Y_i, 1 \leq i \leq n}$. If $m$ is the observed value of $M$, then which one of the
+    following statements is true?
+
+    \begin{enumerate}
+        \item The likelihood ratio test rejects $H_0$ if $m > c$ for some $c$
+        \item The likelihood ratio test rejects $H_0$ if $m < c$ for some $c$
+        \item The likelihood ratio test rejects $H_0$ if $c_1 < m < c_2$ for some $c_1$ and $c_2$
+        \item The likelihood ratio test rejects $H_0$ if $m < c_1$ or $m > c_2$ for some $c_1$ and $c_2$\\
+    \end{enumerate}
+    \item  Let $g\brak{x} = f\brak{x} + f\brak{2-x}$ for all $x \in \brak{0,2}$, where $f \colon\brak{0,2} \to \mathbb{R}$ is continuous on $\brak{0,2}$ and twice differentiable on $\brak{0,2}$. If $g^\prime$ denotes the derivative of $g$ and $f^{\prime\prime}$ denotes the second derivative of $f$, then which one of the following statements is NOT true?  
+
+
+    \begin{enumerate}
+        \item There exists $c \in \brak{0,2}$ such that $g^\prime\brak{c} = 0$
+        \item If $f^{\prime\prime} > 0$ on $\brak{0,2}$, then $g$ is strictly decreasing on $\brak{0,1}$
+        \item  If $f^{\prime\prime} < 0$ on $\brak{0,2}$, then $g$ is strictly increasing on $\brak{1,2}$
+        \item If $f^{\prime\prime} = 0$ on $\brak{0,2}$, then $g$ is a constant function\\
+    \end{enumerate}
+    \item For any subset $U$ of $\mathbb{R}^n$, let $L\brak{U}$ denote the span of $U$. For any two subsets $T$ and $S$ of $\mathbb{R}^n$, which one of the following statements is NOT true?
+
+    \begin{enumerate}
+        \item If $T$ is a proper subset of $S$, then $L\brak{T}$ is a proper subset of $L\brak{S}$
+        \item $L\brak{L\brak{S}} = L\brak{S}$
+        \item $L\brak{T \cup S} = \cbrak{u + v\colon u \in L\brak{T}, v \in L\brak{S}}$
+        \item If $\alpha, \beta$, and $\gamma$ are three vectors in $\mathbb{R}^n$ such that $\alpha + 2\beta + 3\gamma = 0$, then $L\brak{\cbrak{\alpha, \beta}} = L\brak{\cbrak{\beta, \gamma}}$\\
+    \end{enumerate}
+    \item Let $f$ be a continuous function from $\sbrak{0,1}$ to the set of all real numbers. Then which one of the following statements is NOT true?  
+\begin{enumerate}
+\item For any sequence $\cbrak{x_n}_{n \geq 1}$ in $[0,1]$, $\sum_{n=1}^{\infty} \frac{f(x_n)}{n^2}$ is absolutely convergent.
+\item If $\abs{f\brak{x}} = 1$ for all $x \in \sbrak{0,1}$, then $\abs{\int_{0}^{1} f(x) dx} = 1$.
+\item If $\cbrak{x_n}_{n \geq 1}$ is a sequence in $\sbrak{0,1}$ such that $\cbrak{f\brak{x_n}}_{n \geq 1}$ is convergent, then $\cbrak{x_n}_{n \geq 1}$ is convergent.
+\item If $f$ is also monotonically increasing, then the image of $f$ is given by $\sbrak{f\brak{0}, f\brak{1}}$.
+\end{enumerate}
+\item Let $X$ be a random variable with cumulative distribution function
+\begin{align}
+F\brak{x} = \begin{cases}
+    0 & \text{if } x < -1 \\
+    \frac{1}{4}\brak{x+1} & \text{if } -1 \leq x < 0 \\
+    \frac{1}{4}\brak{x+3} & \text{if } 0 \leq x < 1 \\
+    1 & \text{if } x \geq 1.
+\end{cases}
+\end{align}
+
+Which one of the following statements is true?
+
+\begin{enumerate}
+\item $\lim_{n \to \infty} P\brak{-\frac{1}{2} + \frac{1}{n} < X < -\frac{1}{n}} = \frac{5}{8}$
+\item $\lim_{n \to \infty} P\brak{-\frac{1}{2} - \frac{1}{n} < X < \frac{1}{n}} = \frac{5}{8}$
+\item $\lim_{n \to \infty} P\brak{X = \frac{1}{n}} = \frac{1}{2}$
+\item $P\brak{X = 0} = \frac{1}{3}$\\
+\end{enumerate}
+\item Let $\brak{X,Y}$ have joint probability mass function
+\begin{align}p\brak{x,y} = \begin{cases}
+    \frac{c}{2^{x+y+2}} & \text{if } x = 0, 1, 2, ...; \ y = 0, 1, 2, ...; \ x \neq y \\
+    0 & \text{otherwise.}
+\end{cases}\end{align}
+
+Then which one of the following statements is true?
+
+\begin{enumerate}
+\item $c = \frac{1}{2}$
+\item $c = \frac{1}{4}$
+\item $c > 1$
+\item $X$ and $Y$ are independent
+\end{enumerate}
+\item Let $X_1, X_2, ..., X_{10}$ be a random sample of size 10 from a $N_3(\mu, \Sigma)$ distribution, where $\mu$ and non-singular $\Sigma$ are unknown parameters. If 
+\begin{align}\overline{X}_1 = \frac{1}{5}\sum_{i=1}^{5}X_i, \quad \overline{X}_2 = \frac{1}{5}\sum_{i=6}^{10}X_i,\end{align}
+\begin{align}S_1 = \frac{1}{4}\sum_{i=1}^{5}\brak{X_i - \overline{X}_1}\brak{X_i - \overline{X}_1}^\prime, \quad S_2 = \frac{1}{4}\sum_{i=6}^{10}\brak{X_i - \overline{X}_2}\brak{X_i - \overline{X}_2}^\prime,\end{align}
+then which one of the following statements is NOT true?
+
+\begin{enumerate}
+\item $\frac{5}{6}\brak{\overline{X}_1 - \mu}^\prime S_1^{-1}\brak{\overline{X}_1 - \mu}$ follows an F-distribution with $3$ and $2$ degrees of freedom.\\
+\item  $\frac{6}{\brak{\overline{X}_1 - \mu}^\prime S_1^{-1}\brak{\overline{X}_1 - \mu}}$ follows an F-distribution with $2$ and $3$ degrees of freedom.\\
+\item $4\brak{S_1 + S_2}$ follows a Wishart distribution of order 3 with 8 degrees of freedom.
+\item $5\brak{S_1 + S_2}$ follows a Wishart distribution of order 3 with 10 degrees of freedom.
+\end{enumerate}  
+\item  Which of the following sets is/are countable?
+
+\begin{enumerate}
+\item The set of all functions from $\cbrak{1, 2, 3, ..., 10}$ to the set of all rational numbers
+\item The set of all functions from the set of all natural numbers to $\cbrak{0,1}$
+\item The set of all integer valued sequences with only finitely many non-zero terms
+\item The set of all integer valued sequences converging to $1$
+\end{enumerate}
+
+\item For a given real number $a$, let $a^+ = \max\cbrak{a,0}$ and $a^- = \max\cbrak{-a,0}$.
+      If $\cbrak{x_n}_{n\ge1}$ is a sequence of real numbers, then which of the following statements is/are true?
+
+\begin{enumerate}
+\item If $\cbrak{x_n}_{n\ge1}$ converges, then both $\cbrak{x_n^+}_{n\ge1}$ and $\cbrak{x_n^-}_{n\ge1}$ converge
+\item If $\cbrak{x_n}_{n\ge1}$ converges to $0$, then both $\cbrak{x_n^+}_{n\ge1}$ and $\cbrak{x_n^-}_{n\ge1}$ converge to $0$
+\item If both $\cbrak{x_n^+}_{n\ge1}$ and $\cbrak{x_n^-}_{n\ge1}$ converge, then $\cbrak{x_n}_{n\ge1}$ converges
+\item If $\cbrak{x_n^2}_{n\ge1}$ converges, then both $\cbrak{x_n^+}_{n\ge1}$ and $\cbrak{x_n^-}_{n\ge1}$ converge
+\end{enumerate}
+\item Let $A$ be a $3\times3$ real matrix such that 
+$A\myvec{1\\1\\0} = \myvec{0\\0\\4}, \quad A\myvec{0\\1\\1} = \myvec{4\\0\\0}, \quad A\myvec{1\\0\\1} = \myvec{0\\4\\0}$
+Then which of the following statements is/are true?
+
+\begin{enumerate}
+\item $A\myvec{1\\0\\0} = \myvec{2\\2\\-2}$
+\item $A\myvec{0\\1\\0} = \myvec{2\\-2\\2}$
+\item $A\myvec{1\\1\\1} = \myvec{2\\0\\2}$
+\item $A\myvec{1\\2\\3} = \myvec{8\\4\\0}$
+\end{enumerate}
+\item Let $X$ be a positive valued continuous random variable with finite mean.
+      If $Y = \sbrak{X}$, the largest integer less than or equal to $X$, then which of the
+      following statements is/are true?
+
+\begin{enumerate}
+\item $P\brak{Y \leq u} \leq P\brak{X \leq u}$ for all $u \geq 0$
+\item $P\brak{Y \geq u} \leq P\brak{X \geq u}$ for all $u \geq 0$
+\item $E\brak{X} < E\brak{Y}$
+\item $E\brak{X} > E\brak{Y}$
+\end{enumerate}
+\end{enumerate}
+\end{document}
